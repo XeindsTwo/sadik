@@ -1,0 +1,21 @@
+@import 'basic/reset';
+@import 'basic/fonts';
+@import 'basic/vars';
+@import 'basic/mixin';
+@import 'basic/global';
+@import 'basic/libs';
+
+@import "components/btn";
+@import "components/footer";
+@import "components/header";
+@import "components/title-section";
+@import "components/form-elements";
+@import "components/modal";
+@import "components/top";
+
+@import "home/home";
+@import "home/benefits";
+@import "home/programs";
+@import "home/reviews";
+@import "home/schedule";
+@import "home/form";

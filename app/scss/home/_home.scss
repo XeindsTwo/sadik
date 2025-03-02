@@ -1,0 +1,45 @@
+.home {
+  position: relative;
+
+  &__content {
+    max-width: 730px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    color: #112718;
+    letter-spacing: -4px;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    max-width: 640px;
+    font-size: 22px;
+    margin: 0 auto 48px;
+  }
+
+  &__actions {
+    @include flex-align-center(10);
+    justify-content: center;
+  }
+
+  &__decor {
+    @include objectCoverBg;
+    position: absolute;
+    top: 0;
+
+    &--one {
+      left: -150px;
+      top: 100px;
+    }
+
+    &--two {
+      right: -170px;
+    }
+  }
+}

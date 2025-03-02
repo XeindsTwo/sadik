@@ -1,0 +1,90 @@
+.reviews {
+  &__card {
+    border-radius: 22px;
+    background-color: #E7F5EC;
+    padding: 24px 26px;
+    height: 100%;
+  }
+
+  &__head {
+    @include flex-align-center(14);
+    margin-bottom: 26px;
+    line-height: 1;
+  }
+
+  &__avatar {
+    @include objectCoverBg;
+    object-position: top;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #0f141d;
+  }
+
+  &__date {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: .8;
+  }
+
+  &__text {
+    color: #4d4d4d;
+  }
+
+  &__navigation {
+    @include flex-align-center(8);
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    @include flex-center;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    border: 1px solid transparent;
+    background-color: $accent;
+    transition: all .4s;
+    @media (max-width: 860px) {
+      width: 50px;
+      height: 50px;
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: .4;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    &:hover {
+      background-color: #4c835d;
+
+      svg path {
+        fill: $white;
+      }
+    }
+
+    &:focus {
+      background-color: transparent;
+      border-color: $accent;
+
+      svg path {
+        fill: $black100;
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+}

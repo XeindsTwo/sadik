@@ -1,0 +1,67 @@
+.schedule {
+  &__days {
+    @include flex-column(34);
+    margin-top: 60px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #E7F5EC;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #3c6548;
+    margin-bottom: 16px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  &__item {
+    @include flex-column(0);
+    border-radius: 16px;
+    background-color: #d3e7db;
+    padding: 18px 20px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      @include pseudo;
+      left: -2px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 50px;
+      width: 5px;
+      border-radius: 10px;
+      background-color: $accent;
+    }
+  }
+
+  &__date {
+    display: block;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    padding-bottom: 18px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+
+    &::before {
+      @include pseudo;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(#24412D, .6);
+    }
+  }
+
+  &__text {
+
+  }
+}

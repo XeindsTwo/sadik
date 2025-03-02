@@ -1,0 +1,51 @@
+.btn {
+  @include flex-align-center(16);
+  justify-content: center;
+  padding: 16px 40px;
+  background-color: $accent;
+  font-weight: 500;
+  color: $white;
+  font-size: 18px;
+  border-radius: 50px;
+  max-width: max-content;
+  border: 2px solid transparent;
+  transition: color .4s, background-color .4s, border .4s;
+
+  &:hover {
+    background-color: #4c835d;
+    border-color: transparent;
+    color: #f2f2f5;
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: #508a62;
+    border-color: #508a62;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: #60A475;
+    border-color: #60A475;
+
+    &:hover {
+      background-color: #4c835d;
+      border-color: transparent;
+      color: #f2f2f5;
+
+      svg path {
+        fill: $white;
+      }
+    }
+
+    &:focus {
+      background-color: #334938;
+      color: $white;
+      border-color: transparent;
+
+      svg path {
+        fill: $accent
+      }
+    }
+  }
+}
