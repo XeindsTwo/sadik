@@ -5,6 +5,24 @@
     padding: 40px;
     border-radius: 40px;
     background-color: #E7F5EC;
+    @include r($desktop) {
+      padding: 35px;
+      border-radius: 34px;
+    }
+    @include r($lg) {
+      margin: 50px -6px 0;
+      padding: 34px 30px;
+      border-radius: 28px;
+    }
+    @include r($tablet) {
+      padding: 33px 26px;
+    }
+    @media (max-width: 890px) {
+      gap: 42px;
+    }
+    @media (max-width: 410px) {
+      padding: 31px 23px;
+    }
   }
 
   &__name {
@@ -13,12 +31,34 @@
     letter-spacing: -1px;
     color: #3c6548;
     margin-bottom: 16px;
+    @include r($desktop) {
+      font-size: 28px;
+    }
+    @include r($lg) {
+      font-size: 26px;
+      letter-spacing: -0.6px;
+    }
+    @media (max-width: 890px) {
+      text-align: center;
+    }
+    @include r($sm) {
+      font-size: 24px;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
+    @media (max-width: 890px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 610px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -28,6 +68,22 @@
     padding: 18px 20px;
     position: relative;
     text-align: center;
+    @media (max-width: 890px) {
+      max-width: 340px;
+      width: 100%;
+    }
+    @media (max-width: 800px) {
+      max-width: 300px;
+    }
+    @media (max-width: 710px) {
+      max-width: 270px;
+    }
+    @media (max-width: 640px) {
+      max-width: 255px;
+    }
+    @media (max-width: 610px) {
+      max-width: 350px;
+    }
 
     &::before {
       @include pseudo;
@@ -38,6 +94,11 @@
       width: 5px;
       border-radius: 10px;
       background-color: $accent;
+      @include r($tablet) {
+        height: 45px;
+        width: 4px;
+        left: -1px;
+      }
     }
   }
 
@@ -62,6 +123,12 @@
   }
 
   &__text {
-
+    @media (max-width: 1100px) {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    @include r($tablet) {
+      font-size: 17px;
+    }
   }
 }
