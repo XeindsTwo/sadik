@@ -3,6 +3,12 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  @include r($desktop) {
+    gap: 20px;
+  }
+  @include r($lg) {
+    gap: 17px;
+  }
 
   &__text {
     margin: 0 auto 48px;
@@ -10,5 +16,16 @@
     max-width: 750px;
     font-size: 22px;
     color: #61915a;
+    @include r($lg) {
+      font-size: 20px;
+    }
+    @include r($tablet) {
+      margin-bottom: 40px;
+    }
+    @include r($sm) {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
   }
 }

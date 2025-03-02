@@ -1,9 +1,20 @@
 .reviews {
+  position: relative;
+
+  .top__text {
+    @include r($phone) {
+      max-width: 280px;
+    }
+  }
+
   &__card {
     border-radius: 22px;
     background-color: #E7F5EC;
     padding: 24px 26px;
     height: 100%;
+    @media (max-width: 860px) {
+      padding: 23px 22px;
+    }
   }
 
   &__head {
@@ -22,21 +33,43 @@
     margin-bottom: 8px;
     font-weight: 500;
     color: #0f141d;
+    @include r($lg) {
+      margin-bottom: 5px;
+    }
+    @media (max-width: 830px) {
+      font-size: 18px;
+    }
   }
 
   &__date {
     font-size: 18px;
     font-weight: 500;
     opacity: .8;
+    @include r($lg) {
+      font-size: 16px;
+    }
   }
 
   &__text {
     color: #4d4d4d;
+    @media (max-width: 1100px) {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    @include r($phone) {
+      font-size: 17px;
+    }
+    @media (max-width: 385px) {
+      font-size: 16px;
+    }
   }
 
   &__navigation {
     @include flex-align-center(8);
     margin-bottom: 25px;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
   }
 
   &__btn {
@@ -53,6 +86,14 @@
       svg {
         width: 22px;
         height: 22px;
+      }
+    }
+    @include r($sm) {
+      width: 47px;
+      height: 47px;
+      svg {
+        width: 20px;
+        height: 20px;
       }
     }
 
@@ -80,11 +121,31 @@
     }
   }
 
+  .swiper {
+    @media (max-width: 700px) {
+      max-width: 490px;
+    }
+  }
+
   .swiper-wrapper {
     box-sizing: border-box;
   }
 
   .swiper-slide {
     height: auto;
+  }
+
+  .swiper-pagination {
+    @include flex-align-center(10);
+    justify-content: center;
+    bottom: -30px;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $accent;
   }
 }

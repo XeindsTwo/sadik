@@ -9,12 +9,7 @@ function scrollToSection(event) {
 
   let targetOffset;
 
-  if (targetId === 'plan') {
-    targetOffset = targetElement.offsetTop - 10;
-  } else {
-    targetOffset = targetElement.offsetTop - 30;
-  }
-
+  targetOffset = targetElement.offsetTop - 10;
   window.scrollTo({top: targetOffset, behavior: 'smooth'});
 }
 
@@ -29,12 +24,16 @@ new Swiper('.swiper', {
     nextEl: '.reviews__btn--next',
     prevEl: '.reviews__btn--prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets'
+  },
   breakpoints: {
     2000: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1000: {
+    700: {
       slidesPerView: 2,
       spaceBetween: 20,
     }
