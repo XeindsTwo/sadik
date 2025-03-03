@@ -1,5 +1,32 @@
 .benefits {
   margin-top: 250px;
+  @media (max-width: 1300px) {
+    margin-top: 230px;
+  }
+  @include r($desktop) {
+    margin-top: 200px;
+  }
+  @media (max-width: 1100px) {
+    margin-top: 180px;
+  }
+  @include r($lg) {
+    margin-top: 170px;
+  }
+  @media (max-width: 890px) {
+    margin-top: 160px;
+  }
+  @media (max-width: 800px) {
+    margin-top: 150px;
+  }
+  @include r($sm) {
+    margin-top: 135px;
+  }
+  @media (max-width: 515px) {
+    margin-top: 110px;
+  }
+  @include r($phone) {
+    margin-top: 90px;
+  }
 
   .title-section {
     @media (max-width: 415px) {
