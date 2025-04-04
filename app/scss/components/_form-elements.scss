@@ -1,19 +1,21 @@
 .input {
   padding: 18px 20px;
-  border-radius: 72px;
+  border-radius: 12px;
   width: 100%;
   font-size: 16px;
   color: $black100;
   border: 1px solid transparent;
-  background-color: #CDE2D5;
-  transition: border .4s, color .4s;
+  background-color: #deece4;
+  transition: border .4s, color .4s, background-color .4s;
 
   &:hover {
     border-color: $accent;
+    background-color: transparent;
   }
 
   &:focus {
-    border-color: $accent;
+    border-color: transparent;
+    background-color: rgba($accent, .3);
 
     &::placeholder {
       color: $black100;
@@ -22,7 +24,7 @@
 
   &:-webkit-autofill,
   &:-webkit-autofill:focus {
-    -webkit-box-shadow: inset 0 0 0 50px #171C25;
+    -webkit-box-shadow: inset 0 0 0 50px $accent;
     -webkit-text-fill-color: $white;
   }
 
@@ -32,6 +34,6 @@
 
   &::placeholder {
     transition: color .4s;
-    color: #546851;
+    color: #40483f;
   }
 }
