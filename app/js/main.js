@@ -39,3 +39,9 @@ new Swiper('.swiper', {
     }
   }
 });
+
+Fancybox.bind("[data-fancybox]", {
+  iframe: {
+      preload: false
+  }
+});

@@ -5,18 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-      name="description"
-      content="Детский сад «Приоритет» – уютная среда, опытные педагоги, бассейн, спорт и развивающие программы. Запишитесь на экскурсию!"
-  >
+  <meta name="description"
+    content="Детский сад «Приоритет» – уютная среда, опытные педагоги, бассейн, спорт и развивающие программы. Запишитесь на экскурсию!">
   <title>Детский садик "Приоритет"</title>
   <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
-<img class="bg" src="images/bg-start.svg" alt="задний фон декоративный">
-<header class="header">
+  <img class="bg" src="images/bg-start.svg" alt="задний фон декоративный">
+  <header class="header">
   <div class="container">
     <div class="header__inner">
       <img src="images/logo.png" width="56" height="56" alt="логотип детского садика">
@@ -66,13 +65,13 @@
     </ul>
   </nav>
 </header>
-<main>
-  <section class="home indent" id="home">
+  <main>
+    <section class="home indent" id="home">
   <div class="container">
     <div class="home__inner">
       <div class="home__content">
         <h1 class="home__title">
-          Добро пожаловать <br> в Приоритет
+          Добро пожаловать <br> в <span>"ПРИОРИТЕТ"!</span>
         </h1>
         <p class="home__text">
           Детский центр в котором создаем уютную и безопасную среду, где дети учатся, развиваются и находят друзей!
@@ -87,7 +86,7 @@
     </div>
   </div>
 </section>
-  <section class="benefits indent" id="benefits">
+    <section class="benefits indent" id="benefits">
   <div class="container">
     <div class="top">
       <h2 class="title-section title-section--center">Почему выбирают нас?</h2>
@@ -141,7 +140,20 @@
     </ul>
   </div>
 </section>
-  <section class="programs indent" id="programs">
+    <section class="about indent">
+    <div class="container">
+        <h2 class="title-section title-section--center">О центре</h2>
+        <p class="about__text">
+            Мы создаём уютную и безопасную среду, где дети учатся, развиваются и наслаждаются каждым днём. 
+            Посмотрите видео, чтобы ближе познакомиться с нашим детским центром!
+        </p>
+        <a class="about__video" data-fancybox href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <img src="images/home-1.png" alt="Видео о детском центре">
+            <span class="sr-only">Посмотреть видео о детском центре</span>
+        </a>
+    </div>
+</section>
+    <section class="programs indent" id="programs">
   <div class="container">
     <div class="top">
       <h2 class="title-section title-section--center">Наши программы</h2>
@@ -213,7 +225,7 @@
     </div>
   </div>
 </section>
-  <section class="programs indent" id="dream">
+    <section class="programs indent" id="dream">
   <div class="container">
     <div class="top">
       <h2 class="title-section title-section--center">Наши преимущества</h2>
@@ -286,7 +298,7 @@
     </div>
   </div>
 </section>
-  <section class="reviews indent" id="reviews">
+    <section class="reviews indent" id="reviews">
   <div class="container">
     <div class="top">
       <h2 class="title-section title-section--center">Отзывы</h2>
@@ -405,7 +417,7 @@
     <div class="swiper-pagination"></div>
   </div>
 </section>
-  <section class="schedule indent" id="schedule">
+    <section class="schedule indent" id="schedule">
   <div class="container">
     <div class="top">
       <h2 class="title-section title-section--center">Расписание занятий</h2>
@@ -531,7 +543,7 @@
     </div>
   </div>
 </section>
-  <section class="groups" id="groups">
+    <section class="groups" id="groups">
   <div class="container">
     <div class="top">
       <h2 class="title-section title-section--center">Наши группы</h2>
@@ -637,7 +649,7 @@
     </ul>
   </div>
 </section>
-  <div class="form indent" id="form">
+    <div class="form indent" id="form">
   <div class="container">
     <div class="top">
       <h2 class="form__title title-section">Запишитесь на персональную экскурсию!</h2>
@@ -654,8 +666,8 @@
     </form>
   </div>
 </div>
-</main>
-<footer class="footer">
+  </main>
+  <footer class="footer">
   <div class="container container--big">
     <div class="footer__inner">
       <div class="footer__head">
@@ -698,7 +710,7 @@
     </div>
   </div>
 </footer>
-<div class="modal" id="modal-success">
+  <div class="modal" id="modal-success">
   <h3 class="modal__title">
     <span id="modal-name"></span>, thank you for reaching out!
   </h3>
@@ -708,6 +720,7 @@
   </p>
   <button class="modal__btn btn" type="button">Close window</button>
 </div>
-<script src="js/main.min.js" type="module"></script>
-<script src="js/phone-mask.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="js/main.min.js" type="module"></script>
+  <script src="js/phone-mask.js" type="module"></script>
 </body>
